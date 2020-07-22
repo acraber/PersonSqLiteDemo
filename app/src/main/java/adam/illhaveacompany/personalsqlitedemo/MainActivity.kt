@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     fun getItemsList() : ArrayList<EmpModelClass>{
        val databaseHandler : DatabaseHandler = DatabaseHandler(this)
         return databaseHandler.viewEmployee()
-    }
+    }//1
 
 
 
