@@ -99,6 +99,7 @@ class DatabaseHandler (context: Context) :
 
                     val emp = EmpModelClass(id = id, name = name, email = email)
 
+                    empList.add(emp)
                 } while(cursor.moveToNext())
             }
         }
@@ -133,6 +134,8 @@ class DatabaseHandler (context: Context) :
         db.close()
         return success
     }//9
+
+
 
 
 }
